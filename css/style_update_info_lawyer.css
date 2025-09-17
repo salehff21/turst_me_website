@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(227, 227, 227);
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.container {text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:rgb(227, 227, 227);  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    
+    font-size: 16px;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="file"] {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #003366;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#181873; 
+}
+.container input[type="text"]{ 
+    text-align: center;
+    width: 96%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1.2px solid #181873;
+    outline: none;
+
+}
+input[type="file"] {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #1d1616;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #003366;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

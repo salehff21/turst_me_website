@@ -1,0 +1,100 @@
+/* تنسيق للجسم */
+body {
+    direction: ltr;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق للجداول */
+table {
+    box-shadow: -20px 20px 15px 0px rgba(0, 0, 0, 0.1);
+    
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* تنسيق الأزرار */
+button.btn {
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.btn-success {
+    background-color: green;
+}
+
+button.btn-danger {
+    background-color: red;
+}
+
+/* تنسيق الأيقونات */
+a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
+
+/* تنسيق العلامة المائية */
+.WaterMark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.1;
+    font-size: 80px;
+    color: #007bff;
+    z-index: -1;
+}
+
+/* تحسين شكل الجدول والمحتوى */
+.center-content {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* تحسين التوافق مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    .WaterMark {
+        font-size: 50px;
+    }
+}
