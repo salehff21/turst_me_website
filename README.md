@@ -84,7 +84,7 @@ Turst_Me/
 ├─ uploads_files_con/
 └─ Sql/New_database/website_db.sql
 ```
-###Core pages and functions
+## Core pages and functions
 ```sql
 Auth (clients): login_clients.php, signup_Clients.php, logout.php
 
@@ -100,7 +100,7 @@ Public: index.php, Home.php, about_us.php, contact_us.php
 
 Shared: inc/header.php, inc/Session.php, connection.php
 ```
-###Security
+## Security
 ```sql
 Prepared statements for all SQL.
 
@@ -113,7 +113,7 @@ Regenerate session IDs on login; enable httponly and secure cookies.
 Disable error display in production.
 ```
 
-###Deployment
+## Deployment
 ```sql
 Apache or Nginx + PHP-FPM.
 
@@ -121,7 +121,7 @@ Deny direct access to private upload paths if introduced.
 
 DB backups and log rotation.
 ```
-###Roadmap
+## Roadmap
 ```sql
 Move to simple MVC routing.
 
