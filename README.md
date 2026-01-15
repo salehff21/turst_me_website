@@ -29,7 +29,61 @@
 ### ❓ FAQ
 - A dedicated FAQ page to guide users
 
+## 📸 Screenshots
+
+### 🔐 Login
+**Client Login**  
+![Client Login](Screenshot/login_clients.png)
+
+**Lawyer Login**  
+![Lawyer Login](Screenshot/login_lawyer.png)
+
 ---
+
+### 📝 Signup
+**Client Signup**  
+![Client Signup](Screenshot/signup_Clients.png)
+
+**Lawyer Signup**  
+![Lawyer Signup](Screenshot/signup_laywer.png)
+
+---
+
+### 📋 Dashboards
+**Client Consultations**  
+![Client Consultations](Screenshot/consultations_client.png)
+
+**Lawyer Consultations**  
+![Lawyer Consultations](Screenshot/consultations%20Laweyer.png)
+
+---
+
+### ✅ Consultation Management
+**Accept / Reject Consultation**  
+![Accept Consultation](Screenshot/accept_consultation.png)
+
+**Reply to Consultation (Lawyer)**  
+![Reply](Screenshot/replay_laweyer_cosultations.png)
+
+**View Reply (Client)**  
+![View Reply](Screenshot/view_replay.png)
+
+---
+
+### 👤 Profile Management
+**Update Lawyer Info + CV Upload**  
+![Update Lawyer](Screenshot/update_info_lawyer%20page.png)
+
+---
+
+### ❓ FAQ
+![FAQ](Screenshot/Qustions.png)
+
+---
+
+### 🏠 Home
+![Home](Screenshot/Screenshot%202026-01-14%20135903.png)
+
 
 ## 🧰 Tech Stack
 
@@ -42,52 +96,6 @@
 
 ---
 
-## 📸 Screenshots
-
-> All screenshots are stored in the `screenshots/` folder.
-
-### 🏠 Home
-![Home](screenshots/Screenshot%202026-01-14%20135903.png)
-
-### 🔐 Login
-**Client Login**
-![Client Login](screenshot/login_clients.png)
-
-**Lawyer Login**
-![Lawyer Login](screenshot/login_lawyer.png)
-
-### 📝 Signup
-**Client Signup**
-![Client Signup](screenshot/signup_Clients.png)
-
-**Lawyer Signup**
-![Lawyer Signup](screenshot/signup_laywer.png)
-
-### 📋 Dashboards
-**Client Consultations**
-![Client Consultations](screenshot/consultations_client.png)
-
-**Lawyer Consultations**
-![Lawyer Consultations](screenshots/consultations%20Laweyer.png)
-
-### ✅ Consultation Management
-**Accept / Reject Consultation**
-![Accept Consultation](screenshots/accept_consultation.png)
-
-**Reply to Consultation (Lawyer)**
-![Reply](screenshots/replay_laweyer_cosultations.png)
-
-**View Reply (Client)**
-![View Reply](screenshot/view_replay.png)
-
-### 👤 Profile Management
-**Update Lawyer Info + CV Upload**
-![Update Lawyer](screenshot/update_info_lawyer%20page.png)
-
-### ❓ FAQ
-![FAQ](screenshot/Qustions.png)
-
----
 
 ## ✅ Requirements
 
