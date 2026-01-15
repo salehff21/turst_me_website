@@ -51,21 +51,21 @@
 
 ### 🔐 Login
 **Client Login**
-![Client Login](screenshots/login_clients.png)
+![Client Login](screenshot/login_clients.png)
 
 **Lawyer Login**
-![Lawyer Login](screenshots/login_lawyer.png)
+![Lawyer Login](screenshot/login_lawyer.png)
 
 ### 📝 Signup
 **Client Signup**
-![Client Signup](screenshots/signup_Clients.png)
+![Client Signup](screenshot/signup_Clients.png)
 
 **Lawyer Signup**
-![Lawyer Signup](screenshots/signup_laywer.png)
+![Lawyer Signup](screenshot/signup_laywer.png)
 
 ### 📋 Dashboards
 **Client Consultations**
-![Client Consultations](screenshots/consultations_client.png)
+![Client Consultations](screenshot/consultations_client.png)
 
 **Lawyer Consultations**
 ![Lawyer Consultations](screenshots/consultations%20Laweyer.png)
@@ -78,14 +78,14 @@
 ![Reply](screenshots/replay_laweyer_cosultations.png)
 
 **View Reply (Client)**
-![View Reply](screenshots/view_replay.png)
+![View Reply](screenshot/view_replay.png)
 
 ### 👤 Profile Management
 **Update Lawyer Info + CV Upload**
-![Update Lawyer](screenshots/update_info_lawyer%20page.png)
+![Update Lawyer](screenshot/update_info_lawyer%20page.png)
 
 ### ❓ FAQ
-![FAQ](screenshots/Qustions.png)
+![FAQ](screenshot/Qustions.png)
 
 ---
 
