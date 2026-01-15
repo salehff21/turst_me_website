@@ -1,4 +1,4 @@
-# Trust_Me
+ # Trust_Me
 
 **Trust_Me** is a simple Arabic (RTL) legal consultation platform where **clients** and **lawyers** can register, exchange consultations and replies, upload files, and submit evaluations.
 
@@ -9,8 +9,8 @@
 ## ✨ Features
 
 ### 👥 Accounts & Roles
-- **Client registration/login**
-- **Lawyer registration/login**
+- Client registration/login
+- Lawyer registration/login
 - Role-based access (client vs lawyer dashboards)
 
 ### 📩 Consultations Workflow
@@ -28,6 +28,8 @@
 
 ### ❓ FAQ
 - A dedicated FAQ page to guide users
+
+---
 
 ## 📸 Screenshots
 
@@ -84,9 +86,9 @@
 ### 🏠 Home
 ![Home](Screenshot/Screenshot%202026-01-14%20135903.png)
 
+---
 
 ## 🧰 Tech Stack
-
 - **Backend:** PHP
 - **Database:** MySQL
 - **UI:** PHP + CSS (RTL-friendly)
@@ -96,9 +98,7 @@
 
 ---
 
-
 ## ✅ Requirements
-
 - PHP 8.x with extensions: `mysqli`, `mbstring`, `json`, `fileinfo`, `openssl`, `curl`
 - MySQL 8.x or MariaDB 10.x
 - Apache or Nginx + PHP-FPM
@@ -108,32 +108,36 @@
 
 ## 🚀 Quick Start
 
-### 1) Create DB and import schema
+### 1) Create database and import schema
 ```sql
 CREATE DATABASE trust_me DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE trust_me;
 SOURCE Sql/New_database/website_db.sql;
-```
 2) Configure DB connection in connection.php
+php
+Copy code
 $host = '127.0.0.1';
 $user = 'trust_user';
 $pass = 'strong_password';
 $db   = 'trust_me';
-
-3) Set upload directory permissions
+3) S
+bash
+Copy code
 chmod -R 755 uploads uploads_files_con
 # if the web server needs write access:
 chmod -R 775 uploads uploads_files_con
-
-4) Run locally (optional)
+4) Run locally (option
+bash
+Copy code
 php -S 0.0.0.0:8080 -t .
-
-
 Visit:
 
+text
+Copy code
 http://localhost:8080/Turst_Me/index.php
-
 📁 Project Structure
+text
+Copy code
 Turst_Me/
 ├─ index.php
 ├─ Home.php
@@ -168,11 +172,9 @@ Turst_Me/
 ├─ image/
 ├─ uploads/
 ├─ uploads_files_con/
-├─ screenshots/
+├─ Screenshot/
 └─ Sql/New_database/website_db.sql
-
 🧩 Core Pages & Functions
-
 Auth (Clients): login_clients.php, signup_Clients.php, logout.php
 
 Auth (Lawyers): login_lawyer.php, signup_laywer.php, laywer.php
@@ -190,12 +192,11 @@ Public: index.php, Home.php, about_us.php, contact_us.php
 Shared: inc/header.php, inc/Session.php, connection.php
 
 🔒 Security Notes (Recommended)
-
 Use prepared statements for all SQL queries
 
 Validate and sanitize inputs (server-side)
 
-Restrict upload MIME types + file size
+Restrict upload MIME types and file size
 
 Regenerate session IDs on login
 
@@ -204,7 +205,6 @@ Enable httponly and secure cookies (HTTPS)
 Disable error display in production
 
 🌐 Deployment
-
 Apache or Nginx + PHP-FPM
 
 Consider blocking direct access to private upload paths if needed
@@ -212,15 +212,14 @@ Consider blocking direct access to private upload paths if needed
 DB backups and log rotation
 
 🗺️ Roadmap
-
 Move to a simple MVC structure / routing
 
 Centralize validation + CSRF tokens
 
 Improve responsive UI and unify CSS
 
-Add audit logging for sensitive actions 
+Add audit logging for sensitive actions
 
-By: Saleh F. | Web Developer  
+👨‍💻 Author
+Saleh F. | Web Developer
 GitHub: salehff21
-
