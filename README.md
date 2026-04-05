@@ -220,6 +220,10 @@ Improve responsive UI and unify CSS
 
 Add audit logging for sensitive actions
 
-👨‍💻 Author
-Saleh F. | Web Developer
-GitHub: salehff21
+ ## 👤 Developer
+
+- **Saleh Al-Shaebi**  
+  *Information Technology Graduate | Freelance Developer*  
+
+🔗 **LinkedIn:**  
+[Saleh Al-Shaebi](https://www.linkedin.com/in/saleh-al-shaebi-1903263aa)
