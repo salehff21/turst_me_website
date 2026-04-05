@@ -1,229 +1,199 @@
- # Trust_Me
+ # ⚖️ Trust_Me
 
-**Trust_Me** is a simple Arabic (RTL) legal consultation platform where **clients** and **lawyers** can register, exchange consultations and replies, upload files, and submit evaluations.
+**Trust_Me** is a simple Arabic (RTL) legal consultation platform where **clients** and **lawyers** can register, exchange consultations, upload files, and submit evaluations.
 
-> Portfolio note: Screenshots and sample data are for demo purposes.
+> ⚠️ *Note: Screenshots and sample data are for demonstration purposes only.*
 
 ---
 
 ## ✨ Features
 
 ### 👥 Accounts & Roles
-- Client registration/login
-- Lawyer registration/login
-- Role-based access (client vs lawyer dashboards)
+
+* Client registration & login
+* Lawyer registration & login
+* Role-based dashboards (Client / Lawyer)
 
 ### 📩 Consultations Workflow
-- Clients submit legal consultations (with optional file attachments)
-- Lawyers review consultations and **Accept / Reject**
-- Lawyers reply to accepted consultations
-- Clients can view lawyer replies and track consultation status
+
+* Clients submit consultations (with optional attachments)
+* Lawyers review and **Accept / Reject**
+* Lawyers respond to accepted consultations
+* Clients track status and view replies
 
 ### 📎 File Uploads
-- Client uploads for consultation attachments
-- Lawyer CV upload (profile update)
+
+* Consultation attachments (clients)
+* Lawyer CV upload
 
 ### ⭐ Evaluation
-- Clients can submit evaluation/feedback after receiving a reply
+
+* Clients can rate and provide feedback
 
 ### ❓ FAQ
-- A dedicated FAQ page to guide users
+
+* Dedicated FAQ page for guidance
 
 ---
 
 ## 📸 Screenshots
 
 ### 🔐 Login
-**Client Login**  
-![Client Login](Screenshot/login_clients.png)
 
-**Lawyer Login**  
-![Lawyer Login](Screenshot/login_lawyer.png)
-
----
+| Client                                        | Lawyer                                       |
+| --------------------------------------------- | -------------------------------------------- |
+| ![Client Login](Screenshot/login_clients.png) | ![Lawyer Login](Screenshot/login_lawyer.png) |
 
 ### 📝 Signup
-**Client Signup**  
-![Client Signup](Screenshot/signup_Clients.png)
 
-**Lawyer Signup**  
-![Lawyer Signup](Screenshot/signup_laywer.png)
-
----
+| Client                                          | Lawyer                                         |
+| ----------------------------------------------- | ---------------------------------------------- |
+| ![Client Signup](Screenshot/signup_Clients.png) | ![Lawyer Signup](Screenshot/signup_laywer.png) |
 
 ### 📋 Dashboards
-**Client Consultations**  
-![Client Consultations](Screenshot/consultations_client.png)
 
-**Lawyer Consultations**  
-![Lawyer Consultations](Screenshot/consultations%20Laweyer.png)
+| Client                                         | Lawyer                                            |
+| ---------------------------------------------- | ------------------------------------------------- |
+| ![Client](Screenshot/consultations_client.png) | ![Lawyer](Screenshot/consultations%20Laweyer.png) |
 
----
+### ✅ Consultation Flow
 
-### ✅ Consultation Management
-**Accept / Reject Consultation**  
-![Accept Consultation](Screenshot/accept_consultation.png)
+* Accept / Reject
+  ![Accept](Screenshot/accept_consultation.png)
 
-**Reply to Consultation (Lawyer)**  
-![Reply](Screenshot/replay_laweyer_cosultations.png)
+* Reply (Lawyer)
+  ![Reply](Screenshot/replay_laweyer_cosultations.png)
 
-**View Reply (Client)**  
-![View Reply](Screenshot/view_replay.png)
+* View Reply (Client)
+  ![View](Screenshot/view_replay.png)
 
----
+### 👤 Profile
 
-### 👤 Profile Management
-**Update Lawyer Info + CV Upload**  
-![Update Lawyer](Screenshot/update_info_lawyer%20page.png)
-
----
+![Profile](Screenshot/update_info_lawyer%20page.png)
 
 ### ❓ FAQ
+
 ![FAQ](Screenshot/Qustions.png)
 
----
-
 ### 🏠 Home
+
 ![Home](Screenshot/Screenshot%202026-01-14%20135903.png)
 
 ---
 
 ## 🧰 Tech Stack
-- **Backend:** PHP
-- **Database:** MySQL
-- **UI:** PHP + CSS (RTL-friendly)
-- **Uploads:** `uploads/`, `uploads_files_con/`
-- **Schema:** `Sql/New_database/website_db.sql`
-- **Root folder in archive:** `Turst_Me` (note the spelling)
+
+* **Backend:** PHP
+* **Database:** MySQL
+* **Frontend:** HTML, CSS (RTL Support)
+* **File Handling:** uploads system
 
 ---
 
 ## ✅ Requirements
-- PHP 8.x with extensions: `mysqli`, `mbstring`, `json`, `fileinfo`, `openssl`, `curl`
-- MySQL 8.x or MariaDB 10.x
-- Apache or Nginx + PHP-FPM
-- UTF-8 database (`utf8mb4`)
+
+* PHP 8.x
+* MySQL 8.x / MariaDB
+* Apache or Nginx
+* UTF-8 (`utf8mb4`)
 
 ---
 
 ## 🚀 Quick Start
 
-### 1) Create database and import schema
+### 1️⃣ Create Database
+
 ```sql
-CREATE DATABASE trust_me DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE trust_me 
+DEFAULT CHARACTER SET utf8mb4 
+COLLATE utf8mb4_unicode_ci;
+
 USE trust_me;
 SOURCE Sql/New_database/website_db.sql;
-2) Configure DB connection in connection.php
-php
-Copy code
+```
+
+### 2️⃣ Configure Connection
+
+```php
 $host = '127.0.0.1';
 $user = 'trust_user';
 $pass = 'strong_password';
 $db   = 'trust_me';
-3) S
-bash
-Copy code
+```
+
+### 3️⃣ Set Permissions
+
+```bash
 chmod -R 755 uploads uploads_files_con
-# if the web server needs write access:
 chmod -R 775 uploads uploads_files_con
-4) Run locally (option
-bash
-Copy code
+```
+
+### 4️⃣ Run Project
+
+```bash
 php -S 0.0.0.0:8080 -t .
-Visit:
+```
 
-text
-Copy code
+📍 Open in browser:
+
+```
 http://localhost:8080/Turst_Me/index.php
-📁 Project Structure
-text
-Copy code
+```
+
+---
+
+## 📁 Project Structure
+
+```
 Turst_Me/
-├─ index.php
-├─ Home.php
-├─ about_us.php
-├─ contact_us.php
-├─ Qustions.php
-├─ send_qustion.php
-├─ consultations.php
-├─ consultations_client.php
-├─ replay.php
-├─ View_replay.php
-├─ evaluation.php
-├─ login_clients.php
-├─ login_lawyer.php
-├─ signup_Clients.php
-├─ signup_laywer.php
-├─ laywer.php
-├─ accept.php
-├─ logout.php
-├─ connection.php
-├─ inc/
-│  ├─ header.php
-│  └─ Session.php
-├─ css/
-│  ├─ style.css
-│  ├─ laywer_style.css
-│  ├─ Styles_Qustions.css
-│  ├─ Style_conslation.css
-│  ├─ style_evaluation.css
-│  ├─ style_update_info_lawyer.css
-│  └─ about_us_styles.css
-├─ image/
-├─ uploads/
-├─ uploads_files_con/
-├─ Screenshot/
-└─ Sql/New_database/website_db.sql
-🧩 Core Pages & Functions
-Auth (Clients): login_clients.php, signup_Clients.php, logout.php
+├── index.php
+├── Home.php
+├── consultations.php
+├── login_clients.php
+├── login_lawyer.php
+├── signup_Clients.php
+├── signup_laywer.php
+├── connection.php
+├── css/
+├── uploads/
+├── Screenshot/
+└── Sql/
+```
 
-Auth (Lawyers): login_lawyer.php, signup_laywer.php, laywer.php
+---
 
-Questions: Qustions.php, send_qustion.php
+## 🔒 Security Notes
 
-Consultations: consultations.php, consultations_client.php
+* Use prepared statements
+* Validate & sanitize inputs
+* Restrict file uploads
+* Regenerate session IDs
+* Use HTTPS in production
 
-Replies: replay.php, View_replay.php, accept.php
+---
 
-Evaluation: evaluation.php
+## 🌐 Deployment
 
-Public: index.php, Home.php, about_us.php, contact_us.php
+* Apache / Nginx + PHP-FPM
+* Secure uploads directory
+* Regular DB backups
 
-Shared: inc/header.php, inc/Session.php, connection.php
+---
 
-🔒 Security Notes (Recommended)
-Use prepared statements for all SQL queries
+## 🗺️ Roadmap
 
-Validate and sanitize inputs (server-side)
+* Convert to MVC architecture
+* Add CSRF protection
+* Improve UI/UX
+* Add logging system
 
-Restrict upload MIME types and file size
+---
 
-Regenerate session IDs on login
+## 👤 Developer
 
-Enable httponly and secure cookies (HTTPS)
+**Saleh Al-Shaebi**
+*Information Technology Graduate | Freelance Developer*
 
-Disable error display in production
+* 🔗 LinkedIn: [Saleh Al-Shaebi](https://www.linkedin.com/in/saleh-al-shaebi-1903263aa)
 
-🌐 Deployment
-Apache or Nginx + PHP-FPM
-
-Consider blocking direct access to private upload paths if needed
-
-DB backups and log rotation
-
-🗺️ Roadmap
-Move to a simple MVC structure / routing
-
-Centralize validation + CSRF tokens
-
-Improve responsive UI and unify CSS
-
-Add audit logging for sensitive actions
-
- ## 👤 Developer
-
-- **Saleh Al-Shaebi**  
-  *Information Technology Graduate | Freelance Developer*  
-
-🔗 **LinkedIn:**  
-[Saleh Al-Shaebi](https://www.linkedin.com/in/saleh-al-shaebi-1903263aa)
+---
